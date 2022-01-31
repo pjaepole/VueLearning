@@ -2,56 +2,31 @@
   
 
 <div>
+  this is modal
+  <!-- <button @click="showModal=!showModal" >show modal</button>
   <img alt="Vue logo" src="./assets/logo.png">
   <div class='menu'>
     <a v-for="(menu,i) in menuATag" :key="i">{{menu}}</a>
   </div>
-  
 <div v-for="(item,i) in mockproductz" :key="i">
+  
   <img :src="mockproductz[i].image"/>
   <h4>{{mockproductz[i].title}}</h4>
   <p>{{mockproductz[i].price}}</p>
-  <button @click="showModal=!showModal" >close modal</button>
+  <button @click="showModal=!showModal" >close modal</button> -->
 </div>
-<modal-example/>
 
 
- 
-  <div>
-    <img src="./assets/room0.jpg" class="product-img">
-    <h4>
-      {{products[0]}}
-    </h4>
-    <p>${{ price2 }}</p>
-    <button @click="increaseLike(0)">Like</button> <span>Liked: {{liked[0]}}</span>
-  </div>
-  <div>
-    <img src="./assets/room1.jpg" class="product-img">
-    <h4>
-      {{products[1]}}
-    </h4>
-    <p>${{ price2 }}</p>
-    <button @click="increaseLike(1)">Like</button> <span>Liked: {{liked[1]}}</span>
-  </div>
-  <div>
-    <img src="./assets/room2.jpg" class="product-img">
-    <h4>
-      {{products[2]}}
-    </h4>
-    <p>${{ price2 }}</p>
-    <button @click="increaseLike(2)">Like</button> <span>Liked: {{liked[2]}}</span>
-  </div>
-  </div>
+  
 </template>
 
 <script>
-import mockdata from './assets/mockprodcuts'
-import ModalExample from './components/Modal.vue'
+
 export default {
   name: 'App',
   data(){
     return {
-      mockproductz: mockdata,
+      
       showModal:false,
       liked:[0,0,0],
       price1: 600,
@@ -66,9 +41,11 @@ export default {
     }
   },
   components: {
-    ModalExample
+    
   }
 }
+
+
 </script>
 
 <style>
@@ -111,3 +88,4 @@ div {
 }
 
 </style>
+
