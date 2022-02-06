@@ -3,7 +3,7 @@
 
 <div>
   this is modal
-  <!-- <button @click="showModal=!showModal" >show modal</button>
+  <button @click="showModal=!showModal" >show modal</button>
   <img alt="Vue logo" src="./assets/logo.png">
   <div class='menu'>
     <a v-for="(menu,i) in menuATag" :key="i">{{menu}}</a>
@@ -13,7 +13,7 @@
   <img :src="mockproductz[i].image"/>
   <h4>{{mockproductz[i].title}}</h4>
   <p>{{mockproductz[i].price}}</p>
-  <button @click="showModal=!showModal" >close modal</button> -->
+  <button @click="showModal=!showModal" >close modal</button>
 </div>
 
 
