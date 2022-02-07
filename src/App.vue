@@ -13,7 +13,7 @@
   <p>{{mockproductz[i].price}}</p>
   <button @click="showModal=!showModal" >close modal</button>
 </div>
-<modal-example/>
+<ModalExample what='snappleasdfasdfasdf' :whatev='products' />
 
 
  

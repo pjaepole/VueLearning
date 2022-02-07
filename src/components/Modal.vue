@@ -1,10 +1,11 @@
 <template>
   
-
+<div>
 <div>
   this is modal
-  <button @click="showModal=!showModal" >show modal</button>
-  <img alt="Vue logo" src="./assets/logo.png">
+  <button @click="showModal=!showModal" >show modal</button><p>{{what}}</p>
+  <p v-for="(item,i) in whatev" :key='i'>{{item}}</p>
+  <p>{{whatev}}</p>
   <div class='menu'>
     <a v-for="(menu,i) in menuATag" :key="i">{{menu}}</a>
   </div>
@@ -15,6 +16,8 @@
   <p>{{mockproductz[i].price}}</p>
   <button @click="showModal=!showModal" >close modal</button>
 </div>
+</div>
+</div>
 
 
   
@@ -23,6 +26,7 @@
 <script>
 
 export default {
+  props:["what","whatev"],
   name: 'App',
   data(){
     return {
