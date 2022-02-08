@@ -11,7 +11,7 @@
   <img :src="mockproductz[i].image"/>
   <h4>{{mockproductz[i].title}}</h4>
   <p>{{mockproductz[i].price}}</p>
-  <button @click="showModal=!showModal" >close modal</button>
+  <button @click="showModal=!showModal" >ddddaclose modal</button>
 </div>
 <ModalExample what='snappleasdfasdfasdf' :whatev='products' />
 
